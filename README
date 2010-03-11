@@ -1,0 +1,10 @@
+Standard bubble-sort type algorithm implemented in brainfuck.
+
+This is amusingly inefficient since comparison requires repeatedly decrementing
+both values to see which hits zero first. Basically each comparison is an
+elaborate swap (which also requires repeated incrementing/decrementing) that
+leaves the values in the correct order.
+
+This code was tested on the bff brainfuck interpreter, which uses -1 for EOF.
+Some interpreters/compilers use 0; as far as I know there is no definitive
+specification of this aspect of the language.
